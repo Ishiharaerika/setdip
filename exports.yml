@@ -1,7 +1,7 @@
-setdip:
+diphwbkpt:
   attributes: 0
   version:
     major: 0
     minor: 1
   main:
-    start: _start
+    start: module_start
