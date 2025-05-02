@@ -16,7 +16,7 @@ void __attribute__((optimize("O0"))) _start(void)
     *(uint32_t *)0xE0030014 = *(uint32_t *)0xE0062214;
     *(uint32_t *)0xE0030018 = *(uint32_t *)buf;
 
-    // Bit 228 (Enable hardware break/watch point)
+    // Bit 228 (Enable Hardware breakpont/watchpoint)
     *(uint32_t *)buf = *(uint32_t *)0xE006221C; // DIP base + 0x1C
     buf[0] |= 1 << 4;                           // Byte 0, bit 4
     *(uint32_t *)0xE003001C = *(uint32_t *)buf;
